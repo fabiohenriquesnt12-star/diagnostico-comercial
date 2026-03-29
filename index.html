@@ -32,8 +32,7 @@
     .bar-row { padding: 6px 16px 10px; display: flex; align-items: center; gap: 8px; }
     .bar-wrap { flex: 1; background: #f1efe8; border-radius: 4px; height: 8px; overflow: hidden; }
     .bar-fill { height: 100%; border-radius: 4px; transition: width 0.5s ease; min-width: 4px; }
-    .bar-pct-label { font-size: 11px; color: #888780; width: 36px; text-align: right; flex-shrink: 0; }
-    .drop-badge { font-size: 11px; padding: 2px 8px; border-radius: 20px; background: #FCEBEB; color: #A32D2D; flex-shrink: 0; }
+    .bar-pct-label { font-size: 11px; width: 48px; text-align: right; flex-shrink: 0; font-weight: 500; }
     .ticket-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; margin-bottom: 1.5rem; }
     .ticket-card { background: #ffffff; border: 0.5px solid #d3d1c7; border-radius: 12px; padding: 14px; }
     .ticket-card label { font-size: 12px; color: #5f5e5a; display: block; margin-bottom: 8px; }
@@ -43,12 +42,9 @@
     .res { background: #f1efe8; border-radius: 8px; padding: 14px; }
     .res-label { font-size: 11px; color: #5f5e5a; margin-bottom: 6px; }
     .res-value { font-size: 20px; font-weight: 500; color: #1a1a18; }
-    .res-sub { font-size: 11px; color: #888780; margin-top: 4px; }
-
-    /* MEDIDOR */
     .saude-box { border: 0.5px solid #d3d1c7; border-radius: 12px; padding: 20px; background: #ffffff; margin-bottom: 1.5rem; }
     .saude-track-wrap { position: relative; margin-bottom: 6px; padding-top: 18px; }
-    .saude-track { height: 14px; border-radius: 7px; background: linear-gradient(to right, #E24B4A 0%, #E24B4A 29%, #EF9F27 29%, #EF9F27 49%, #1D9E75 49%, #1D9E75 75%, #378ADD 75%, #378ADD 100%); position: relative; }
+    .saude-track { height: 14px; border-radius: 7px; background: linear-gradient(to right, #E24B4A 0%, #E24B4A 29%, #EF9F27 29%, #EF9F27 49%, #1D9E75 49%, #1D9E75 75%, #378ADD 75%, #378ADD 100%); }
     .saude-needle-wrap { position: absolute; top: 0; left: 2%; transition: left 1.2s cubic-bezier(0.34, 1.56, 0.64, 1); transform: translateX(-50%); }
     .saude-needle-triangle { width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 12px solid #1a1a18; margin: 0 auto; }
     .saude-needle-line { width: 2px; height: 14px; background: #1a1a18; margin: 0 auto; border-radius: 1px; }
@@ -57,10 +53,8 @@
     .saude-status { display: flex; align-items: center; gap: 12px; padding-top: 12px; border-top: 0.5px solid #f1efe8; }
     .saude-score { font-size: 32px; font-weight: 500; transition: color 0.6s; color: #888780; min-width: 70px; }
     .saude-info-title { font-size: 14px; font-weight: 500; transition: color 0.6s; color: #888780; margin-bottom: 2px; }
-    .saude-info-desc { font-size: 12px; color: #5f5e5a; line-height: 1.5; }
+    .saude-info-desc { font-size: 12px; color: #5f5e5a; }
     .saude-msg { margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 13px; line-height: 1.6; display: none; }
-
-    /* FUNIL VISUAL */
     .funil-visual { margin-bottom: 1.5rem; }
     .fv-etapa { margin-bottom: 8px; }
     .fv-label-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
@@ -70,8 +64,6 @@
     .fv-bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 10px; transition: width 0.5s ease; min-width: 40px; }
     .fv-bar span { font-size: 12px; font-weight: 500; color: #fff; }
     .fv-drop { font-size: 11px; color: #A32D2D; margin-top: 2px; text-align: right; min-height: 14px; }
-
-    /* COMPARATIVO */
     .comparativo { border-radius: 12px; overflow: hidden; border: 0.5px solid #d3d1c7; margin-bottom: 1.5rem; background: #ffffff; }
     .comp-row { display: grid; grid-template-columns: 1fr 1fr 1fr; }
     .comp-cell { padding: 11px 14px; border-bottom: 0.5px solid #f1efe8; border-right: 0.5px solid #d3d1c7; }
@@ -82,24 +74,18 @@
     .comp-cell.simulado { background: #E1F5EE; }
     .comp-cell.simulado .comp-cell-value { color: #0F6E56; }
     .comp-no-border { border-bottom: none !important; }
-
-    /* POTENCIAL */
     .potencial-box { border-radius: 12px; padding: 28px 24px; border: 2px solid #E24B4A; background: #FCEBEB; text-align: center; margin-bottom: 1.5rem; }
     .pot-label { font-size: 11px; font-weight: 500; color: #A32D2D; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.07em; }
     .pot-value { font-size: 48px; font-weight: 500; color: #A32D2D; margin-bottom: 10px; line-height: 1; }
     .pot-desc { font-size: 14px; color: #712B13; line-height: 1.7; max-width: 480px; margin: 0 auto; }
     .pot-desc strong { font-weight: 500; }
-
-    /* SURPRESA */
     .surpresa-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; margin-bottom: 2rem; }
     .surp-card { border-radius: 12px; border: 0.5px solid #d3d1c7; padding: 20px 16px; background: #ffffff; text-align: center; }
     .surp-icon { font-size: 28px; margin-bottom: 10px; }
     .surp-value { font-size: 26px; font-weight: 500; color: #1a1a18; margin-bottom: 6px; }
     .surp-label { font-size: 12px; color: #5f5e5a; line-height: 1.5; }
-
     .footer { text-align: center; padding-top: 2rem; border-top: 0.5px solid #d3d1c7; }
     .footer p { font-size: 12px; color: #888780; }
-
     @media (max-width: 600px) {
       .funil-block-header, .etapa { grid-template-columns: 1fr 100px 100px; }
       .results-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
@@ -121,56 +107,41 @@
     <button class="tab" onclick="switchTab('comparativo')">Comparativo</button>
   </div>
 
-  <!-- PAINEL ATUAL -->
   <div class="panel active" id="panel-atual">
     <p class="sl">Funil comercial — situação hoje</p>
     <div class="funil-block">
       <div class="funil-block-header">
-        <span>Etapa</span><span>Quantidade</span><span>Conversão</span>
+        <span>Etapa</span><span>Quantidade</span><span>vs etapa anterior</span>
       </div>
       <div class="etapa">
         <div><p class="etapa-label">Leads gerados</p><p class="etapa-sub">total que entra no funil</p></div>
         <div class="input-wrap"><input type="number" id="a_leads" placeholder="100" oninput="onNumChange('a',1)"><span class="input-suffix">leads</span></div>
         <div class="input-wrap"><input type="number" id="a_leads_pct" value="100" readonly><span class="input-suffix">%</span></div>
       </div>
-      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_a1" style="width:100%;background:#378ADD;"></div></div><span class="bar-pct-label">100%</span></div>
+      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_a1" style="width:100%;background:#378ADD;"></div></div><span class="bar-pct-label" style="color:#378ADD;">100%</span></div>
       <div class="etapa">
         <div><p class="etapa-label">Qualificados ICP</p><p class="etapa-sub">perfil de cliente ideal</p></div>
         <div class="input-wrap"><input type="number" id="a_icp" placeholder="50" oninput="onNumChange('a',2)"><span class="input-suffix">leads</span></div>
         <div class="input-wrap"><input type="number" id="a_icp_pct" placeholder="50" oninput="onPctChange('a',2)"><span class="input-suffix">%</span></div>
       </div>
-      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_a2" style="width:50%;background:#1D9E75;"></div></div><span class="bar-pct-label" id="bl_a2">—</span><span class="drop-badge" id="drop_a2" style="display:none;"></span></div>
+      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_a2" style="width:50%;background:#1D9E75;"></div></div><span class="bar-pct-label" id="bl_a2" style="color:#1D9E75;">—</span></div>
       <div class="etapa">
         <div><p class="etapa-label">Reunião / proposta</p><p class="etapa-sub">chegaram até a oferta</p></div>
         <div class="input-wrap"><input type="number" id="a_prop" placeholder="25" oninput="onNumChange('a',3)"><span class="input-suffix">leads</span></div>
         <div class="input-wrap"><input type="number" id="a_prop_pct" placeholder="50" oninput="onPctChange('a',3)"><span class="input-suffix">%</span></div>
       </div>
-      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_a3" style="width:25%;background:#EF9F27;"></div></div><span class="bar-pct-label" id="bl_a3">—</span><span class="drop-badge" id="drop_a3" style="display:none;"></span></div>
+      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_a3" style="width:25%;background:#EF9F27;"></div></div><span class="bar-pct-label" id="bl_a3" style="color:#EF9F27;">—</span></div>
       <div class="etapa">
         <div><p class="etapa-label">Fechamentos</p><p class="etapa-sub">clientes novos no mês</p></div>
         <div class="input-wrap"><input type="number" id="a_fecha" placeholder="5" oninput="onNumChange('a',4)"><span class="input-suffix">vendas</span></div>
         <div class="input-wrap"><input type="number" id="a_fecha_pct" placeholder="20" oninput="onPctChange('a',4)"><span class="input-suffix">%</span></div>
       </div>
-      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_a4" style="width:5%;background:#E24B4A;"></div></div><span class="bar-pct-label" id="bl_a4">—</span><span class="drop-badge" id="drop_a4" style="display:none;"></span></div>
+      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_a4" style="width:5%;background:#E24B4A;"></div></div><span class="bar-pct-label" id="bl_a4" style="color:#E24B4A;">—</span></div>
     </div>
-
     <div class="ticket-grid">
-      <div class="ticket-card">
-        <label>Ticket médio (R$)</label>
-        <input type="number" id="a_ticket" placeholder="5000" oninput="calcAtual()">
-      </div>
-      <div class="ticket-card">
-        <label>Tempo com baixa performance</label>
-        <select id="a_tempo" onchange="calcAtual()">
-          <option value="1">1 mês</option>
-          <option value="3">3 meses</option>
-          <option value="6" selected>6 meses</option>
-          <option value="12">1 ano</option>
-          <option value="24">2 anos ou mais</option>
-        </select>
-      </div>
+      <div class="ticket-card"><label>Ticket médio (R$)</label><input type="number" id="a_ticket" placeholder="5000" oninput="calcAtual()"></div>
+      <div class="ticket-card"><label>Tempo com baixa performance</label><select id="a_tempo" onchange="calcAtual()"><option value="1">1 mês</option><option value="3">3 meses</option><option value="6" selected>6 meses</option><option value="12">1 ano</option><option value="24">2 anos ou mais</option></select></div>
     </div>
-
     <p class="sl">Saúde do comercial</p>
     <div class="saude-box">
       <div class="saude-track-wrap">
@@ -185,81 +156,65 @@
       </div>
       <div class="saude-status">
         <span class="saude-score" id="saude_score">—%</span>
-        <div>
-          <div class="saude-info-title" id="saude_titulo">Preencha os dados</div>
-          <div class="saude-info-desc" id="saude_desc">taxa geral de conversão leads → fechamento</div>
-        </div>
+        <div><div class="saude-info-title" id="saude_titulo">Preencha os dados</div><div class="saude-info-desc" id="saude_desc">conversão reunião → fechamento</div></div>
       </div>
       <div class="saude-msg" id="saude_msg"></div>
     </div>
-
     <p class="sl">Onde os leads estão caindo</p>
     <div class="funil-visual" id="fv_atual"></div>
-
     <p class="sl">Resultados atuais</p>
     <div class="results-grid">
       <div class="res"><p class="res-label">Faturamento mensal</p><p class="res-value" id="a_fat_mes">R$ —</p></div>
       <div class="res"><p class="res-label">Faturamento anual</p><p class="res-value" id="a_fat_ano">R$ —</p></div>
-      <div class="res"><p class="res-label">Taxa geral leads → venda</p><p class="res-value" id="a_taxa">—%</p></div>
+      <div class="res"><p class="res-label">Conversão reunião → venda</p><p class="res-value" id="a_taxa">—%</p></div>
     </div>
   </div>
 
-  <!-- PAINEL SIMULAÇÃO -->
   <div class="panel" id="panel-simulado">
     <p class="sl">Funil comercial — cenário otimizado</p>
     <div class="funil-block">
       <div class="funil-block-header">
-        <span>Etapa</span><span>Quantidade</span><span>Conversão</span>
+        <span>Etapa</span><span>Quantidade</span><span>vs etapa anterior</span>
       </div>
       <div class="etapa">
         <div><p class="etapa-label">Leads gerados</p><p class="etapa-sub">total que entra no funil</p></div>
         <div class="input-wrap"><input type="number" id="s_leads" placeholder="100" oninput="onNumChange('s',1)"><span class="input-suffix">leads</span></div>
         <div class="input-wrap"><input type="number" id="s_leads_pct" value="100" readonly><span class="input-suffix">%</span></div>
       </div>
-      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_s1" style="width:100%;background:#378ADD;"></div></div><span class="bar-pct-label">100%</span></div>
+      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_s1" style="width:100%;background:#378ADD;"></div></div><span class="bar-pct-label" style="color:#378ADD;">100%</span></div>
       <div class="etapa">
         <div><p class="etapa-label">Qualificados ICP</p><p class="etapa-sub">perfil de cliente ideal</p></div>
         <div class="input-wrap"><input type="number" id="s_icp" placeholder="70" oninput="onNumChange('s',2)"><span class="input-suffix">leads</span></div>
         <div class="input-wrap"><input type="number" id="s_icp_pct" placeholder="70" oninput="onPctChange('s',2)"><span class="input-suffix">%</span></div>
       </div>
-      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_s2" style="width:70%;background:#1D9E75;"></div></div><span class="bar-pct-label" id="bl_s2">—</span><span class="drop-badge" id="drop_s2" style="display:none;"></span></div>
+      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_s2" style="width:70%;background:#1D9E75;"></div></div><span class="bar-pct-label" id="bl_s2" style="color:#1D9E75;">—</span></div>
       <div class="etapa">
         <div><p class="etapa-label">Reunião / proposta</p><p class="etapa-sub">chegaram até a oferta</p></div>
         <div class="input-wrap"><input type="number" id="s_prop" placeholder="50" oninput="onNumChange('s',3)"><span class="input-suffix">leads</span></div>
         <div class="input-wrap"><input type="number" id="s_prop_pct" placeholder="71" oninput="onPctChange('s',3)"><span class="input-suffix">%</span></div>
       </div>
-      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_s3" style="width:50%;background:#EF9F27;"></div></div><span class="bar-pct-label" id="bl_s3">—</span><span class="drop-badge" id="drop_s3" style="display:none;"></span></div>
+      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_s3" style="width:50%;background:#EF9F27;"></div></div><span class="bar-pct-label" id="bl_s3" style="color:#EF9F27;">—</span></div>
       <div class="etapa">
         <div><p class="etapa-label">Fechamentos</p><p class="etapa-sub">clientes novos no mês</p></div>
         <div class="input-wrap"><input type="number" id="s_fecha" placeholder="20" oninput="onNumChange('s',4)"><span class="input-suffix">vendas</span></div>
         <div class="input-wrap"><input type="number" id="s_fecha_pct" placeholder="40" oninput="onPctChange('s',4)"><span class="input-suffix">%</span></div>
       </div>
-      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_s4" style="width:20%;background:#1D9E75;"></div></div><span class="bar-pct-label" id="bl_s4">—</span><span class="drop-badge" id="drop_s4" style="display:none;"></span></div>
+      <div class="bar-row"><div class="bar-wrap"><div class="bar-fill" id="fbar_s4" style="width:20%;background:#1D9E75;"></div></div><span class="bar-pct-label" id="bl_s4" style="color:#1D9E75;">—</span></div>
     </div>
-
     <div class="ticket-grid">
-      <div class="ticket-card">
-        <label>Ticket médio (R$)</label>
-        <input type="number" id="s_ticket" placeholder="5000" oninput="calcSim()">
-      </div>
-      <div class="ticket-card">
-        <label>Valor da implementação (R$)</label>
-        <input type="number" id="s_impl" placeholder="5000" oninput="calcSim()">
-      </div>
+      <div class="ticket-card"><label>Ticket médio (R$)</label><input type="number" id="s_ticket" placeholder="5000" oninput="calcSim()"></div>
+      <div class="ticket-card"><label>Valor da implementação (R$)</label><input type="number" id="s_impl" placeholder="5000" oninput="calcSim()"></div>
     </div>
-
     <p class="sl">Onde os leads estão caindo</p>
     <div class="funil-visual" id="fv_sim"></div>
-
     <p class="sl">Resultados simulados</p>
     <div class="results-grid">
       <div class="res"><p class="res-label">Faturamento mensal</p><p class="res-value" id="s_fat_mes" style="color:#1D9E75;">R$ —</p></div>
       <div class="res"><p class="res-label">Faturamento anual</p><p class="res-value" id="s_fat_ano" style="color:#1D9E75;">R$ —</p></div>
-      <div class="res"><p class="res-label">Taxa geral leads → venda</p><p class="res-value" id="s_taxa" style="color:#1D9E75;">—%</p></div>
+      <div class="res"><p class="res-label">Conversão reunião → venda</p><p class="res-value" id="s_taxa" style="color:#1D9E75;">—%</p></div>
     </div>
   </div>
 
-  <!-- PAINEL COMPARATIVO -->
   <div class="panel" id="panel-comparativo">
     <p class="sl">Comparativo — atual vs otimizado</p>
     <div class="comparativo">
@@ -268,61 +223,23 @@
         <div class="comp-cell"><p class="comp-cell-label" style="font-weight:500;color:#1a1a18;">Atual</p></div>
         <div class="comp-cell simulado"><p class="comp-cell-label" style="font-weight:500;color:#0F6E56;">Otimizado</p></div>
       </div>
-      <div class="comp-row">
-        <div class="comp-cell"><p class="comp-cell-label">Leads gerados</p></div>
-        <div class="comp-cell"><p class="comp-cell-value" id="c_a_leads">—</p></div>
-        <div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_leads">—</p></div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell"><p class="comp-cell-label">Qualificados ICP</p></div>
-        <div class="comp-cell"><p class="comp-cell-value" id="c_a_icp">—</p></div>
-        <div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_icp">—</p></div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell"><p class="comp-cell-label">Reuniões / propostas</p></div>
-        <div class="comp-cell"><p class="comp-cell-value" id="c_a_prop">—</p></div>
-        <div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_prop">—</p></div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell"><p class="comp-cell-label">Fechamentos/mês</p></div>
-        <div class="comp-cell"><p class="comp-cell-value" id="c_a_fecha">—</p></div>
-        <div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_fecha">—</p></div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell"><p class="comp-cell-label">Taxa de conversão</p></div>
-        <div class="comp-cell"><p class="comp-cell-value" id="c_a_taxa">—</p></div>
-        <div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_taxa">—</p></div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell"><p class="comp-cell-label">Faturamento mensal</p></div>
-        <div class="comp-cell"><p class="comp-cell-value" id="c_a_mes">—</p></div>
-        <div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_mes">—</p></div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell comp-no-border"><p class="comp-cell-label">Faturamento anual</p></div>
-        <div class="comp-cell comp-no-border"><p class="comp-cell-value" id="c_a_ano">—</p></div>
-        <div class="comp-cell simulado comp-no-border"><p class="comp-cell-value" id="c_s_ano">—</p></div>
-      </div>
+      <div class="comp-row"><div class="comp-cell"><p class="comp-cell-label">Leads gerados</p></div><div class="comp-cell"><p class="comp-cell-value" id="c_a_leads">—</p></div><div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_leads">—</p></div></div>
+      <div class="comp-row"><div class="comp-cell"><p class="comp-cell-label">Qualificados ICP</p></div><div class="comp-cell"><p class="comp-cell-value" id="c_a_icp">—</p></div><div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_icp">—</p></div></div>
+      <div class="comp-row"><div class="comp-cell"><p class="comp-cell-label">Reuniões / propostas</p></div><div class="comp-cell"><p class="comp-cell-value" id="c_a_prop">—</p></div><div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_prop">—</p></div></div>
+      <div class="comp-row"><div class="comp-cell"><p class="comp-cell-label">Fechamentos/mês</p></div><div class="comp-cell"><p class="comp-cell-value" id="c_a_fecha">—</p></div><div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_fecha">—</p></div></div>
+      <div class="comp-row"><div class="comp-cell"><p class="comp-cell-label">Conversão reunião → venda</p></div><div class="comp-cell"><p class="comp-cell-value" id="c_a_taxa">—</p></div><div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_taxa">—</p></div></div>
+      <div class="comp-row"><div class="comp-cell"><p class="comp-cell-label">Faturamento mensal</p></div><div class="comp-cell"><p class="comp-cell-value" id="c_a_mes">—</p></div><div class="comp-cell simulado"><p class="comp-cell-value" id="c_s_mes">—</p></div></div>
+      <div class="comp-row"><div class="comp-cell comp-no-border"><p class="comp-cell-label">Faturamento anual</p></div><div class="comp-cell comp-no-border"><p class="comp-cell-value" id="c_a_ano">—</p></div><div class="comp-cell simulado comp-no-border"><p class="comp-cell-value" id="c_s_ano">—</p></div></div>
     </div>
-
     <div class="potencial-box">
       <p class="pot-label">Potencial de receita não capturado</p>
       <p class="pot-value" id="pot_mes">R$ —</p>
       <p class="pot-desc" id="pot_desc">Preencha as abas anteriores para revelar o potencial real do seu comercial.</p>
     </div>
-
     <p class="sl">O que você poderia fazer com essa receita</p>
     <div class="surpresa-grid">
-      <div class="surp-card">
-        <div class="surp-icon">📅</div>
-        <p class="surp-value" id="surp_meses">—</p>
-        <p class="surp-label">para a implementação se pagar com o ganho gerado</p>
-      </div>
-      <div class="surp-card">
-        <div class="surp-icon">👥</div>
-        <p class="surp-value" id="surp_func">—</p>
-        <p class="surp-label">funcionários contratados por mês com a receita que está sendo perdida</p>
-      </div>
+      <div class="surp-card"><div class="surp-icon">📅</div><p class="surp-value" id="surp_meses">—</p><p class="surp-label">para a implementação se pagar com o ganho gerado</p></div>
+      <div class="surp-card"><div class="surp-icon">👥</div><p class="surp-value" id="surp_func">—</p><p class="surp-label">funcionários contratados por mês com a receita que está sendo perdida</p></div>
     </div>
   </div>
 
@@ -330,172 +247,161 @@
 </div>
 
 <script>
-function fmt(v) { return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); }
-function fmtPct(v) { return v.toFixed(1) + '%'; }
-function pct(a,b) { if(!b) return 0; return Math.round((a/b)*100); }
-function getVal(id) { return parseFloat(document.getElementById(id).value) || 0; }
-function setVal(id, v) { document.getElementById(id).value = v; }
-var dA = {}, dS = {};
+function fmt(v){return 'R$ '+Math.round(v).toLocaleString('pt-BR');}
+function fmtPct(v){return v.toFixed(1)+'%';}
+function pctOf(a,b){if(!b)return 0;return Math.round((a/b)*100);}
+function getVal(id){return parseFloat(document.getElementById(id).value)||0;}
+function setVal(id,v){document.getElementById(id).value=v;}
+var dA={},dS={};
 
-function onNumChange(p, step) {
-  var leads = getVal(p+'_leads'), icp = getVal(p+'_icp'), prop = getVal(p+'_prop'), fecha = getVal(p+'_fecha');
-  if(step===1){ setVal(p+'_leads_pct', 100); }
-  if(step===2 && leads){ setVal(p+'_icp_pct', Math.round((icp/leads)*100)); }
-  if(step===3 && icp){ setVal(p+'_prop_pct', Math.round((prop/icp)*100)); }
-  if(step===4 && prop){ setVal(p+'_fecha_pct', Math.round((fecha/prop)*100)); }
-  if(p==='a') calcAtual(); else calcSim();
+function onNumChange(p,step){
+  var leads=getVal(p+'_leads'),icp=getVal(p+'_icp'),prop=getVal(p+'_prop'),fecha=getVal(p+'_fecha');
+  if(step===1){setVal(p+'_leads_pct',100);}
+  if(step===2&&leads){setVal(p+'_icp_pct',pctOf(icp,leads));}
+  if(step===3&&icp){setVal(p+'_prop_pct',pctOf(prop,icp));}
+  if(step===4&&prop){setVal(p+'_fecha_pct',pctOf(fecha,prop));}
+  if(p==='a')calcAtual();else calcSim();
 }
 
-function onPctChange(p, step) {
-  var leads = getVal(p+'_leads'), icp = getVal(p+'_icp'), prop = getVal(p+'_prop');
-  var pct2 = getVal(p+'_icp_pct'), pct3 = getVal(p+'_prop_pct'), pct4 = getVal(p+'_fecha_pct');
-  if(step===2 && leads){ setVal(p+'_icp', Math.round(leads*(pct2/100))); }
-  if(step===3 && icp){ setVal(p+'_prop', Math.round(icp*(pct3/100))); }
-  if(step===4 && prop){ setVal(p+'_fecha', Math.round(prop*(pct4/100))); }
-  if(p==='a') calcAtual(); else calcSim();
+function onPctChange(p,step){
+  var leads=getVal(p+'_leads'),icp=getVal(p+'_icp'),prop=getVal(p+'_prop');
+  var pct2=getVal(p+'_icp_pct'),pct3=getVal(p+'_prop_pct'),pct4=getVal(p+'_fecha_pct');
+  if(step===2&&leads){setVal(p+'_icp',Math.round(leads*(pct2/100)));}
+  if(step===3&&icp){setVal(p+'_prop',Math.round(icp*(pct3/100)));}
+  if(step===4&&prop){setVal(p+'_fecha',Math.round(prop*(pct4/100)));}
+  if(p==='a')calcAtual();else calcSim();
 }
 
-function updateBars(p, leads, icp, prop, fecha) {
-  var colors = ['#378ADD','#1D9E75','#EF9F27', p==='s'?'#1D9E75':'#E24B4A'];
-  var vals = [leads, icp, prop, fecha];
-  var prevs = [leads, leads, icp, prop];
+function updateBars(p,leads,icp,prop,fecha){
+  var colors=['#378ADD','#1D9E75','#EF9F27',p==='s'?'#1D9E75':'#E24B4A'];
+  var vals=[leads,icp,prop,fecha];
+  var prevs=[leads,leads,icp,prop];
   for(var i=1;i<=4;i++){
-    var pw = leads>0 ? Math.max(2, Math.round((vals[i-1]/leads)*100)) : 2;
-    var el = document.getElementById('fbar_'+p+i);
-    if(el){ el.style.width=pw+'%'; el.style.background=colors[i-1]; }
-    var bl = document.getElementById('bl_'+p+i);
-    if(bl && i>1){ bl.textContent = prevs[i-1]>0 ? pct(vals[i-1],prevs[i-1])+'%' : '—'; }
-    var dr = document.getElementById('drop_'+p+i);
-    if(dr && i>1 && prevs[i-1]>0){
-      var lost = prevs[i-1]-vals[i-1];
-      if(lost>0){ dr.style.display='inline'; dr.textContent='-'+lost+' leads'; }
-      else { dr.style.display='none'; }
-    }
+    var pw=leads>0?Math.max(2,Math.round((vals[i-1]/leads)*100)):2;
+    var el=document.getElementById('fbar_'+p+i);
+    if(el){el.style.width=pw+'%';el.style.background=colors[i-1];}
+    var bl=document.getElementById('bl_'+p+i);
+    if(bl&&i>1){bl.textContent=prevs[i-1]>0?pctOf(vals[i-1],prevs[i-1])+'%':'—';}
   }
 }
 
-function renderFunilVisual(cid, labels, vals, colors) {
-  var c = document.getElementById(cid); if(!c) return;
-  var max = vals[0]||1, html='';
+function renderFunilVisual(cid,labels,vals,colors){
+  var c=document.getElementById(cid);if(!c)return;
+  var max=vals[0]||1,html='';
+  var prevs=[vals[0],vals[0],vals[1],vals[2]];
   for(var i=0;i<labels.length;i++){
-    var w = Math.max(8, Math.round((vals[i]/max)*100));
-    var drop = i>0 ? (vals[i-1]-vals[i]) : 0;
-    var dropPct = i>0 && vals[i-1]>0 ? Math.round((drop/vals[i-1])*100) : 0;
-    html += '<div class="fv-etapa">';
-    html += '<div class="fv-label-row"><span class="fv-label">'+labels[i]+'</span><span class="fv-nums">'+vals[i]+(vals[0]>0?' ('+Math.round((vals[i]/vals[0])*100)+'% do total)':'')+'</span></div>';
-    html += '<div class="fv-bar-wrap"><div class="fv-bar" style="width:'+w+'%;background:'+colors[i]+';"><span>'+vals[i]+'</span></div></div>';
-    if(i>0 && drop>0){ html += '<div class="fv-drop">perdeu '+drop+' leads aqui (queda de '+dropPct+'%)</div>'; }
-    else { html += '<div class="fv-drop"></div>'; }
-    html += '</div>';
+    var w=Math.max(8,Math.round((vals[i]/max)*100));
+    var p2p=i>0&&prevs[i]>0?pctOf(vals[i],prevs[i]):100;
+    var drop=i>0?(prevs[i]-vals[i]):0;
+    html+='<div class="fv-etapa">';
+    html+='<div class="fv-label-row"><span class="fv-label">'+labels[i]+'</span><span class="fv-nums">'+vals[i]+(i>0&&prevs[i]>0?' ('+p2p+'% da etapa anterior)':'')+'</span></div>';
+    html+='<div class="fv-bar-wrap"><div class="fv-bar" style="width:'+w+'%;background:'+colors[i]+';"><span>'+vals[i]+'</span></div></div>';
+    if(i>0&&drop>0){html+='<div class="fv-drop">perdeu '+drop+' leads aqui (queda de '+(100-p2p)+'%)</div>';}
+    else{html+='<div class="fv-drop"></div>';}
+    html+='</div>';
   }
-  c.innerHTML = html;
+  c.innerHTML=html;
 }
 
-function updateSaude(taxa) {
-  var needle = document.getElementById('saude_needle');
-  var score  = document.getElementById('saude_score');
-  var titulo = document.getElementById('saude_titulo');
-  var desc   = document.getElementById('saude_desc');
-  var msg    = document.getElementById('saude_msg');
-  if(!needle) return;
-  var pos = Math.min(98, Math.max(1, taxa));
-  needle.style.left = pos + '%';
-  score.textContent = taxa.toFixed(1) + '%';
-  msg.style.display = 'block';
-  if(taxa < 30){
-    score.style.color = '#E24B4A'; titulo.style.color = '#E24B4A';
-    titulo.textContent = 'Crítico';
-    desc.textContent = 'taxa geral de conversão leads → fechamento';
-    msg.style.background = '#FCEBEB'; msg.style.color = '#712B13'; msg.style.border = '0.5px solid #F0997B';
-    msg.textContent = 'O comercial está operando abaixo do potencial. Cada mês sem mudança é receita desperdiçada.';
-  } else if(taxa < 50){
-    score.style.color = '#BA7517'; titulo.style.color = '#BA7517';
-    titulo.textContent = 'Mediano';
-    desc.textContent = 'taxa geral de conversão leads → fechamento';
-    msg.style.background = '#FAEEDA'; msg.style.color = '#633806'; msg.style.border = '0.5px solid #FAC775';
-    msg.textContent = 'O comercial funciona, mas está longe do potencial. Os ajustes certos podem dobrar os resultados.';
-  } else if(taxa < 75){
-    score.style.color = '#1D9E75'; titulo.style.color = '#1D9E75';
-    titulo.textContent = 'Ótimo';
-    desc.textContent = 'taxa geral de conversão leads → fechamento';
-    msg.style.background = '#E1F5EE'; msg.style.color = '#04342C'; msg.style.border = '0.5px solid #9FE1CB';
-    msg.textContent = 'Boa performance. Agora é hora de documentar, blindar e preparar para escalar.';
-  } else {
-    score.style.color = '#185FA5'; titulo.style.color = '#185FA5';
-    titulo.textContent = 'Elite';
-    desc.textContent = 'taxa geral de conversão leads → fechamento';
-    msg.style.background = '#E6F1FB'; msg.style.color = '#042C53'; msg.style.border = '0.5px solid #B5D4F4';
-    msg.textContent = 'Comercial de alto nível. O próximo passo é garantir que esse resultado não dependa só de você.';
+function updateSaude(taxa){
+  var needle=document.getElementById('saude_needle');
+  var score=document.getElementById('saude_score');
+  var titulo=document.getElementById('saude_titulo');
+  var desc=document.getElementById('saude_desc');
+  var msg=document.getElementById('saude_msg');
+  if(!needle)return;
+  needle.style.left=Math.min(98,Math.max(1,taxa))+'%';
+  score.textContent=taxa.toFixed(1)+'%';
+  msg.style.display='block';
+  if(taxa<30){
+    score.style.color='#E24B4A';titulo.style.color='#E24B4A';titulo.textContent='Crítico';
+    desc.textContent='conversão reunião → fechamento';
+    msg.style.background='#FCEBEB';msg.style.color='#712B13';msg.style.border='0.5px solid #F0997B';
+    msg.textContent='O comercial está operando abaixo do potencial. Cada mês sem mudança é receita desperdiçada.';
+  }else if(taxa<50){
+    score.style.color='#BA7517';titulo.style.color='#BA7517';titulo.textContent='Mediano';
+    desc.textContent='conversão reunião → fechamento';
+    msg.style.background='#FAEEDA';msg.style.color='#633806';msg.style.border='0.5px solid #FAC775';
+    msg.textContent='O comercial funciona, mas está longe do potencial. Os ajustes certos podem dobrar os resultados.';
+  }else if(taxa<75){
+    score.style.color='#1D9E75';titulo.style.color='#1D9E75';titulo.textContent='Ótimo';
+    desc.textContent='conversão reunião → fechamento';
+    msg.style.background='#E1F5EE';msg.style.color='#04342C';msg.style.border='0.5px solid #9FE1CB';
+    msg.textContent='Boa performance. Agora é hora de documentar, blindar e preparar para escalar.';
+  }else{
+    score.style.color='#185FA5';titulo.style.color='#185FA5';titulo.textContent='Elite';
+    desc.textContent='conversão reunião → fechamento';
+    msg.style.background='#E6F1FB';msg.style.color='#042C53';msg.style.border='0.5px solid #B5D4F4';
+    msg.textContent='Comercial de alto nível. O próximo passo é garantir que esse resultado não dependa só de você.';
   }
 }
 
-function calcAtual() {
-  var leads = getVal('a_leads'), icp = getVal('a_icp'), prop = getVal('a_prop'), fecha = getVal('a_fecha');
-  var ticket = getVal('a_ticket');
-  updateBars('a', leads, icp, prop, fecha);
-  var fatMes = fecha*ticket, fatAno = fatMes*12;
-  var taxa = leads>0 ? (fecha/leads)*100 : 0;
-  document.getElementById('a_fat_mes').textContent = ticket ? fmt(fatMes) : 'R$ —';
-  document.getElementById('a_fat_ano').textContent = ticket ? fmt(fatAno) : 'R$ —';
-  document.getElementById('a_taxa').textContent = leads ? fmtPct(taxa) : '—%';
-  if(leads>0 && fecha>0) updateSaude(taxa);
+function calcAtual(){
+  var leads=getVal('a_leads'),icp=getVal('a_icp'),prop=getVal('a_prop'),fecha=getVal('a_fecha');
+  var ticket=getVal('a_ticket');
+  updateBars('a',leads,icp,prop,fecha);
+  var fatMes=fecha*ticket,fatAno=fatMes*12;
+  var taxa=prop>0?(fecha/prop)*100:0;
+  document.getElementById('a_fat_mes').textContent=ticket?fmt(fatMes):'R$ —';
+  document.getElementById('a_fat_ano').textContent=ticket?fmt(fatAno):'R$ —';
+  document.getElementById('a_taxa').textContent=prop?fmtPct(taxa):'—%';
+  if(prop>0&&fecha>=0)updateSaude(taxa);
   renderFunilVisual('fv_atual',['Leads gerados','Qualificados ICP','Reunião / proposta','Fechamentos'],[leads,icp,prop,fecha],['#378ADD','#1D9E75','#EF9F27','#E24B4A']);
-  dA = { leads, icp, prop, fecha, ticket, fatMes, fatAno, taxa };
+  dA={leads,icp,prop,fecha,ticket,fatMes,fatAno,taxa};
   atualizaComparativo();
 }
 
-function calcSim() {
-  var leads = getVal('s_leads'), icp = getVal('s_icp'), prop = getVal('s_prop'), fecha = getVal('s_fecha');
-  var ticket = getVal('s_ticket'), impl = getVal('s_impl');
-  updateBars('s', leads, icp, prop, fecha);
-  var fatMes = fecha*ticket, fatAno = fatMes*12;
-  var taxa = leads>0 ? (fecha/leads)*100 : 0;
-  document.getElementById('s_fat_mes').textContent = ticket ? fmt(fatMes) : 'R$ —';
-  document.getElementById('s_fat_ano').textContent = ticket ? fmt(fatAno) : 'R$ —';
-  document.getElementById('s_taxa').textContent = leads ? fmtPct(taxa) : '—%';
+function calcSim(){
+  var leads=getVal('s_leads'),icp=getVal('s_icp'),prop=getVal('s_prop'),fecha=getVal('s_fecha');
+  var ticket=getVal('s_ticket'),impl=getVal('s_impl');
+  updateBars('s',leads,icp,prop,fecha);
+  var fatMes=fecha*ticket,fatAno=fatMes*12;
+  var taxa=prop>0?(fecha/prop)*100:0;
+  document.getElementById('s_fat_mes').textContent=ticket?fmt(fatMes):'R$ —';
+  document.getElementById('s_fat_ano').textContent=ticket?fmt(fatAno):'R$ —';
+  document.getElementById('s_taxa').textContent=prop?fmtPct(taxa):'—%';
   renderFunilVisual('fv_sim',['Leads gerados','Qualificados ICP','Reunião / proposta','Fechamentos'],[leads,icp,prop,fecha],['#378ADD','#1D9E75','#EF9F27','#1D9E75']);
-  dS = { leads, icp, prop, fecha, ticket, fatMes, fatAno, taxa, impl };
+  dS={leads,icp,prop,fecha,ticket,fatMes,fatAno,taxa,impl};
   atualizaComparativo();
 }
 
-function atualizaComparativo() {
-  var a=dA, s=dS;
-  document.getElementById('c_a_leads').textContent = a.leads||'—';
-  document.getElementById('c_a_icp').textContent   = a.icp||'—';
-  document.getElementById('c_a_prop').textContent  = a.prop||'—';
-  document.getElementById('c_a_fecha').textContent = a.fecha||'—';
-  document.getElementById('c_a_taxa').textContent  = a.taxa!=null&&a.leads ? fmtPct(a.taxa) : '—';
-  document.getElementById('c_a_mes').textContent   = a.fatMes ? fmt(a.fatMes) : '—';
-  document.getElementById('c_a_ano').textContent   = a.fatAno ? fmt(a.fatAno) : '—';
-  document.getElementById('c_s_leads').textContent = s.leads||'—';
-  document.getElementById('c_s_icp').textContent   = s.icp||'—';
-  document.getElementById('c_s_prop').textContent  = s.prop||'—';
-  document.getElementById('c_s_fecha').textContent = s.fecha||'—';
-  document.getElementById('c_s_taxa').textContent  = s.taxa!=null&&s.leads ? fmtPct(s.taxa) : '—';
-  document.getElementById('c_s_mes').textContent   = s.fatMes ? fmt(s.fatMes) : '—';
-  document.getElementById('c_s_ano').textContent   = s.fatAno ? fmt(s.fatAno) : '—';
-  if(a.fatMes!=null && s.fatMes!=null && s.fatMes>0){
-    var difMes = s.fatMes - (a.fatMes||0);
-    var difAno = s.fatAno - (a.fatAno||0);
-    var ganho = difMes>0 ? difMes : 0;
-    document.getElementById('pot_mes').textContent = fmt(ganho);
-    document.getElementById('pot_desc').innerHTML = 'Com o comercial otimizado, você passa a capturar <strong>'+fmt(ganho)+' a mais por mês</strong> — ou <strong>'+fmt(difAno>0?difAno:0)+' a mais por ano</strong>. Esse é o valor que está sendo desperdiçado hoje.';
-    var impl = s.impl||5000;
-    var meses = ganho>0 ? Math.ceil(impl/ganho) : 0;
-    document.getElementById('surp_meses').textContent = ganho>0 ? (meses===1?'1 mês':meses+' meses') : '—';
-    var funcs = ganho>0 ? Math.floor(ganho/3000) : 0;
-    document.getElementById('surp_func').textContent = funcs>0 ? funcs+(funcs===1?' funcionário':' funcionários') : '—';
+function atualizaComparativo(){
+  var a=dA,s=dS;
+  document.getElementById('c_a_leads').textContent=a.leads||'—';
+  document.getElementById('c_a_icp').textContent=a.icp||'—';
+  document.getElementById('c_a_prop').textContent=a.prop||'—';
+  document.getElementById('c_a_fecha').textContent=a.fecha||'—';
+  document.getElementById('c_a_taxa').textContent=a.taxa!=null&&a.prop?fmtPct(a.taxa):'—';
+  document.getElementById('c_a_mes').textContent=a.fatMes?fmt(a.fatMes):'—';
+  document.getElementById('c_a_ano').textContent=a.fatAno?fmt(a.fatAno):'—';
+  document.getElementById('c_s_leads').textContent=s.leads||'—';
+  document.getElementById('c_s_icp').textContent=s.icp||'—';
+  document.getElementById('c_s_prop').textContent=s.prop||'—';
+  document.getElementById('c_s_fecha').textContent=s.fecha||'—';
+  document.getElementById('c_s_taxa').textContent=s.taxa!=null&&s.prop?fmtPct(s.taxa):'—';
+  document.getElementById('c_s_mes').textContent=s.fatMes?fmt(s.fatMes):'—';
+  document.getElementById('c_s_ano').textContent=s.fatAno?fmt(s.fatAno):'—';
+  if(s.fatMes>0){
+    var difMes=s.fatMes-(a.fatMes||0),difAno=s.fatAno-(a.fatAno||0);
+    var ganho=difMes>0?difMes:0;
+    document.getElementById('pot_mes').textContent=fmt(ganho);
+    document.getElementById('pot_desc').innerHTML='Com o comercial otimizado, você passa a capturar <strong>'+fmt(ganho)+' a mais por mês</strong> — ou <strong>'+fmt(difAno>0?difAno:0)+' a mais por ano</strong>. Esse é o valor que está sendo desperdiçado hoje.';
+    var impl=s.impl||5000;
+    var meses=ganho>0?Math.ceil(impl/ganho):0;
+    document.getElementById('surp_meses').textContent=ganho>0?(meses===1?'1 mês':meses+' meses'):'—';
+    var funcs=ganho>0?Math.floor(ganho/3000):0;
+    document.getElementById('surp_func').textContent=funcs>0?funcs+(funcs===1?' funcionário':' funcionários'):'—';
   }
 }
 
-function switchTab(tab) {
+function switchTab(tab){
   document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');});
   document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active');});
   document.getElementById('panel-'+tab).classList.add('active');
-  var tabs = document.querySelectorAll('.tab');
-  if(tab==='atual') tabs[0].classList.add('active');
-  if(tab==='simulado') tabs[1].classList.add('active');
-  if(tab==='comparativo') tabs[2].classList.add('active');
+  var tabs=document.querySelectorAll('.tab');
+  if(tab==='atual')tabs[0].classList.add('active');
+  if(tab==='simulado')tabs[1].classList.add('active');
+  if(tab==='comparativo')tabs[2].classList.add('active');
 }
 </script>
 </body>
